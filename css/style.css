@@ -1,0 +1,239 @@
+/* css reset  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css variable  */
+:root {
+    --navbar-height: 50px;
+}
+
+/* Navigation Bar  */
+#navbar {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    height: 55px;
+}
+
+/*  Navigation bar:logo and img  */
+#logo {
+    margin: 0px 20px;
+}
+
+#logo img {
+    height: 52px;
+    margin: 1px 14px
+}
+
+/* Navigation Bar:lsit-style  */
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+
+}
+
+#navbar ul li a {
+    font-size: 1.2rem;
+    color: white;
+    display: block;
+    margin: 4px 10px;
+    padding: 4px 8px;
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+}
+
+#navbar ul li a:hover {
+    background-color: black;
+    border-radius: 16px;
+}
+
+/* Home section  */
+#home{
+    display: flex;
+    padding: 0px 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    /* top: 0px;
+    left: 0px; */
+    height: 102%;
+    width: 100%;
+    background: url(../img2/bg-2.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Prosto One', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    /* font-size: 1.2rem; */
+    font-family:'Prosto One', cursive;
+}
+/* service section  */
+#services{
+    display: flex;
+    
+    
+}
+#services .box{
+    border: 2px solid red;
+    background-color: #eceaea;
+    margin: 0px 3px;
+    padding: 4px 8px;
+    border-radius: 38px
+
+}
+#services .box img{
+    height: 174px;
+    width: 259px;
+    display: block;
+    margin: auto;
+    border-radius: 46px;
+
+}
+#services .box p{
+    font-family: 'Prosto One', cursive;
+}
+/* client-section  */
+/* #client-section{
+    height:250px;
+} */
+#client-section::before{
+    content: "";
+    position: absolute;
+    /* top: 0px;
+    left: 0px; */
+    height:53%;
+    width: 100%;
+    background: url('../img2/lunch.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8;
+    margin: 4px;
+}
+#client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 285px;
+    
+    
+
+}
+#client img{
+ height: 100px;
+  margin: 11px 4px;
+  padding:14px 0px;
+}
+#client .items{
+    
+
+}
+/* form section for  contact us  */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    display: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../img2/bg-1.jpg') no-repeat center center/cover;
+    /* z-index:-1;  */
+
+}
+#contactbox{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+  padding-bottom: 10px;
+  height: 410px;
+  width: 100%;
+  padding-left: 10px;
+}
+#contactbox input,
+#contactbox textarea{
+    width: 100%;
+    margin: 6px ;
+    padding: 5px;
+}
+#contactbox form{
+    width: 50%;
+}
+#contactbox label{
+    font-size: 1.2rem;
+    font-family:'Bree Serif', serif;;
+}
+
+
+/* footer  */
+ footer .center{
+     color: white;
+    background-color: black;
+    /* margin: 2px 50px; */
+    padding:2px 50px;
+ }
+
+
+/* utility class  */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px 20px;
+    font-family: 'Prosto One', cursive;
+    margin: 40px;
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 30px 20px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    color: black;
+    border: 2px solid white;
+    background-color: rgb(60, 123, 123);
+    padding: 6px 20px;
+    margin: 20px 3px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+}
+.center{
+    text-align: center;
+    
+   
+}

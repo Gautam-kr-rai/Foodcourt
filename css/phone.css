@@ -1,0 +1,62 @@
+/* navigation bar  */
+#navbar{
+   flex-direction: column;
+   height: 100px;
+   width: 100%;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    margin: 0px 13px;
+    padding: 0px 3px;
+}
+
+/* home */
+#home{
+    height: 234px;
+    padding: 143px 10px;
+}
+#home::before{
+    height: 518px;
+}
+#home p{
+    font-size: 1rem;
+}
+/* services  */
+#services{
+    flex-direction: column;
+
+}
+#services .box{
+
+}
+/* clinet section  */
+#client{
+    overflow: hidden;
+    flex-wrap: wrap;
+    height: 235px;
+}
+#client-section::before{
+    height: 300px;
+}
+#client img{
+    width: 76px;
+    padding: 7px 4px;
+}
+/* contact box  */
+#contact-box form{
+    width: 80%;
+    padding-top:  10px 15px;
+}
+#contactbox{
+    height:400px;
+}
+#contactbox input,
+#contactbox textarea{
+    width: 100%;
+    margin: 5px ;
+    /* padding: 5px; */
+}
+/* utility class  */
+.h-primary{
+   font-size:25px;
+}
